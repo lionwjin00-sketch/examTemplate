@@ -36,5 +36,5 @@ addbutton.addEventListener("click", function () {
     });
 
     showTodos();
-    WhatToDo.value = "";
+    WhatTodo.value = "";
 });
