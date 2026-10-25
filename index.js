@@ -30,12 +30,12 @@ deleteButton.addEventListener("click", function () {
         todos.splice(i, 1);
         showTodos();
     }
-});
+}); //사실상 모든걸 실행하는 함수. li에 textContent를 넣어주고, 삭제 버튼을 만들어서 li에 추가하고, 삭제 버튼 클릭시 confirm창을 띄우고, 확인시 todos에서 해당 index를 제거하고 showTodos()를 다시 실행함.
 
 li.appendChild(deleteButton);
     todoList.appendChild(li);
     }
-}
+}//showTodos()를 실행하면, todoList의 innerHTML을 초기화하고, todos 배열을 순회하면서 li를 생성하고, 삭제 버튼을 만들어서 li에 추가하고, li를 todoList에 추가함.
 showTodos();
 
 addbutton.addEventListener("click", function () {
@@ -49,4 +49,4 @@ addbutton.addEventListener("click", function () {
 
     showTodos();
     WhatTodo.value = "";
-});
+});//버튼 클릭시, WhatTodo에 있는 value를 가져와서 todos에 push해주고, showTodos()를 실행해주고, WhatTodo.value를 초기화해줌
