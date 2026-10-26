@@ -13,11 +13,18 @@ addbutton으로 text값에 입력을 받아서 todos에 추가한 다음 showTod
 먼저 해야하는것은 delete버튼 추가. delete버튼을 추가 버튼 옆에 만들어서 한번 누르면 delete상태가 on이 되어서 누르는 모든 list값을 삭제시키거나, 각 list옆 맨 오른쪽에 각각 delete버튼을 추가해서 그걸 누르면 삭제하게 되기 둘중 코드가 더 간편한것을 선택해보자.
 
 코드 설계를 대충 해본 결과 각각 delete버튼을 만드는게 나한테는 더 쉬울듯함. 
-그러면 1. delete버튼을 누르면 list값에서 해당값을 지우고 showTodos만 출력하면 되는지 or 해당값을 지우고 그 뒤쪽 값을 다 앞으로 한칸씩 땡겨야하는지 봐야함.
-2. 버튼을 누르면 alert로 "정말 지우시겠습니까?"를 출력하고 확인을 누르면 todos에 있는 list값을 지운 다음, showTodos를 한다. 
+그러면 1. delete버튼을 누르면 list값에서 해당값을 지우고 showTodos만 출력하면 됨.
+2. 버튼을 누르면 confirm으로 "정말 지우시겠습니까?"를 출력하고 확인을 누르면 todos에 있는 list값을 지운 다음, showTodos를 한다. 
+:완료
 
-새로고침해도 안사라지게 하는법
-뭐라고 검색해야 나오는지 잘 모르겠음. 찾아보는데 잘 안나옴. 틈틈이 찾아볼 것.
+새로고침해도 유지:
+localStorage라는걸로 하는듯 하다.
+참조링크:
+https://7357.tistory.com/52
+위 글에 따르면 localStorage에 내 list값을 넣어서 저장하면 되는듯.
+localStorage: 브라우저에 key-value값을 저장할수 있게함. 
+항상 문자열로 저장됨
+
 
 
 
